@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* immagine di sfondo */
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+}
+
+/* Sezione principale semitrasparente */
+body > div {
+  margin: 5% 18%;
+  padding: 50px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px:
+}
+
+
+/* lgogo */
+header > img {
+  width: 25%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* testo nell header */
+header > h1{
+  color: #07E607;
+  margin: 0 auto 10px;
+  text-align: center;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+
+/* barra di navigazione */
+nav {
+  background-color: #07E607;
+  height: 40px;
+  display: flex; /* per poter centare i pulsanti */
+  align-items: center; /* centratura vericale */
+  justify-content: center; /* centratura orizzontale*/
+}
+
+nav > button {
+  margin: 10px; /* spaziatura tra i pulsanti */
+}
+
+
+/* proprietà per tutte le sezioni */
+section{
+  color: white;
+  margin: 30px auto 0;
+}
+
+/* testo "Monopattino utente" */
+section > h2 {
+  display: inline-block; /* per poter alineare il testo alla checkbox */
+  margin: 0 auto;
+}
+
+/* indirizzo e distanza */
+section > p:before{
+  content: "\21A6 "; /* aggiungo la freccetta*/
+  margin: 3px auto; /* riduco i margini troppo grandi del paragrafo p*/
+}
+
+/* testo: Stato della carica */
+section > h3 {
+  margin: 0 auto 2px;
+}
+
+
+/* ogni barra di stato ha un diverso id */
+#stato1 {
+  height: 30px;
+  width: 30%; /* lunghezza della barra*/
+  background-color: rgb(255, 192, 53); /* colore della barra */
+  border-radius: 5px;
+}
+
+#stato2 {
+  height: 30px;
+  width: 50%; /* lunghezza della barra*/
+  background-color: rgb(70, 220, 53); /* colore della barra */
+  border-radius: 5px;
+}
+
+#stato3 {
+  height: 30px;
+  width: 15%; /* lunghezza della barra*/
+  background-color: rgb(255, 70, 53); /* colore della barra */ 
+  border-radius: 5px;
+}
